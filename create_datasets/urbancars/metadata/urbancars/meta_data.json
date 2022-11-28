@@ -1,0 +1,108 @@
+{
+  "object": [
+    {
+      "name": "urban",
+      "id": 0
+    },
+    {
+      "name": "country",
+      "id": 1
+    }
+  ],
+  "background": [
+    {
+      "name": "urban",
+      "class_list": [
+        {
+          "name": "alley",
+          "id": 4
+        },
+        {
+          "name": "street",
+          "id": 319
+        },
+        {
+          "name": "downtown",
+          "id": 125
+        },
+        {
+          "name": "crosswalk",
+          "id": 112
+        },
+        {
+          "name": "gas_station",
+          "id": 158
+        },
+        {
+          "name": "garage-outdoor",
+          "id": 157
+        },
+        {
+          "name": "driveway",
+          "id": 127
+        }
+      ]
+    },
+    {
+      "name": "country",
+      "class_list": [
+        {
+          "name": "desert_road",
+          "id": 118
+        },
+        {
+          "name": "field_road",
+          "id": 142
+        },
+        {
+          "name": "forest_road",
+          "id": 152
+        }
+      ]
+    }
+  ],
+  "co_occur_object": [
+    {
+      "name": "urban",
+      "class_list": [
+        {
+          "name": "fireplug",
+          "id": 445
+        },
+        {
+          "name": "stop_sign",
+          "id": 1019
+        },
+        {
+          "name": "street_sign",
+          "id": 1026
+        },
+        {
+          "name": "parking_meter",
+          "id": 766
+        },
+        {
+          "name": "traffic_light",
+          "id": 1112
+        }
+      ]
+    },
+    {
+      "name": "country",
+      "class_list": [
+        {
+          "name": "cow",
+          "id": 80
+        },
+        {
+          "name": "horse",
+          "id": 569
+        },
+        {
+          "name": "sheep",
+          "id": 943
+        }
+      ]
+    }
+  ]
+}
