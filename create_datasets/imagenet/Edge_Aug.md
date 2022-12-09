@@ -27,8 +27,8 @@ Here are the results and the checkpoints of LLE using Edge Aug:
 
 | method                | architecture | IN-1k | IN-W Gap | Carton Gap | SIN Gap | IN-R Gap | IN-9 Gap | IN-Sketch Gap | LR   | checkpoint |
 |-----------------------|--------------|-------|----------|------------|---------|----------|----------|---------------|------|------------|
-| LLE + Edge Aug        | ResNet-50    | 76.24 | -6.18    | +10        | -61.52  | -53.69   | -3.95    | -48.25        | 1e-3 | TODO       |
-| MAE + LLE + Edge Aug  | ViT-B        | 83.69 | -2.54    | +6         | -59.04  | -43.97   | -3.70    | -43.17        | 1e-3 | TODO       |
-| MAE + LLE + Edge Aug  | ViT-L        | 85.84 | -1.76    | +16        | -56.52  | -33.76   | -2.94    | -36.45        | 1e-3 | TODO       |
-| MAE + LLE + Edge Aug  | ViT-H        | 86.84 | -1.20    | +28        | -55.90  | -30.31   | -2.47    | -33.45        | 1e-3 | TODO       |
-| SWAG + LLE + Edge Aug | ViT-B        | 85.31 | -2.48    | +12        | -61.24  | -27.78   | -3.28    | -38.37        | 1e-4 | TODO       |
+| LLE + Edge Aug        | ResNet-50    | 76.24 | -6.18    | +10        | -61.52  | -53.69   | -3.95    | -48.25        | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_edge_aug_r50.pth) |
+| MAE + LLE + Edge Aug  | ViT-B        | 83.69 | -2.54    | +6         | -59.04  | -43.97   | -3.70    | -43.17        | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_edge_aug_vit-b_mae-ft.pth) |
+| MAE + LLE + Edge Aug  | ViT-L        | 85.84 | -1.76    | +16        | -56.52  | -33.76   | -2.94    | -36.45        | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_edge_aug_vit-l_mae-ft.pth) |
+| MAE + LLE + Edge Aug  | ViT-H        | 86.84 | -1.20    | +28        | -55.90  | -30.31   | -2.47    | -33.45        | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_edge_aug_vit-h_mae-ft.pth) |
+| SWAG + LLE + Edge Aug | ViT-B        | 85.31 | -2.48    | +12        | -61.24  | -27.78   | -3.28    | -38.37        | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_edge_aug_vit-b_swag-ft.pth) |

@@ -2,7 +2,7 @@
 
 [Zhiheng Li](https://zhiheng.li), [Ivan Evtimov](https://ivanevtimov.eu/), [Albert Gordo](https://agordo.github.io/), [Caner Hazirbas](https://hazirbas.com/), [Tal Hassner](https://talhassner.github.io/home/), [Cristian Canton Ferrer](https://cristiancanton.github.io/), [Chenliang Xu](https://www.cs.rochester.edu/~cxu22/), [Mark Ibrahim](https://markibrahim.me/)
 
-[[`arXiv`]()] [[`BibTeX`](#CitingWhacAMole)]
+[[`preprint`]()]
 
 <div align="center">
   <img src="assets/teaser.png" width="100%" height="100%"/>
@@ -114,27 +114,27 @@ PYTHONPATH=.:$PYTHONPATH python imagenet_trainers/launcher.py --method ${METHOD}
 
 * `${LR}` is the learning rate. We tune learning rates based on IN-1k top-1 accuracy. The learning rates after tuning and the checkpoints are shown in the following table:
 
-| method            | architecture | IN-1k | IN-W Gap  | Carton Gap | SIN Gap    | IN-R Gap   | IN-9 Gap  | LR   | checkpoint |
+| method            | architecture | IN-1k | IN-W Gap  | Carton Gap | SIN Gap    | IN-R Gap   | IN-9 Gap  | LR   | download |
 |-------------------|--------------|-------|-----------|------------|------------|------------|-----------|------|------------|
-| ERM               | ResNet-50    | 76.39 | -25.40    | +30        | -69.43     | -56.22     | -5.19     | 1e-3 | TODO       |
-| Mixup             | ResNet-50    | 76.17 | -24.87    | +34        | -68.18     | -55.79     | -5.60     | 1e-4 | TODO       |
-| CutMix            | ResNet-50    | 75.90 | -25.78    | +32        | -69.31     | -56.36     | -5.65     | 1e-4 | TODO       |
-| Cutout            | ResNet-50    | 76.40 | -25.11    | +32        | -69.39     | -55.93     | -5.35     | 1e-3 | TODO       |
-| AugMix            | ResNet-50    | 76.23 | -23.41    | +38        | -68.51     | -54.91     | -5.85     | 1e-4 | TODO       |
-| SD                | ResNet-50    | 76.39 | -26.03    | +30        | -69.42     | -56.36     | -5.33     | 1e-3 | TODO       |
-| WTM Aug           | ResNet-50    | 76.32 | **-5.78** | +14        | -69.31     | -56.22     | -5.34     | 1e-3 | TODO       |
-| TXT Aug           | ResNet-50    | 75.94 | -25.93    | +36        | -63.99     | **-53.24** | -5.66     | 1e-4 | TODO       |
-| BG Aug            | ResNet-50    | 76.03 | -25.01    | +36        | -68.41     | -54.51     | -4.67     | 1e-4 | TODO       |
-| LfF               | ResNet-50    | 76.35 | -26.19    | +36        | -69.34     | -56.02     | -5.61     | 1e-4 | TODO       |
-| JTT               | ResNet-50    | 76.33 | -26.40    | +32        | -69.48     | -56.30     | -5.55     | 1e-2 | TODO       |
-| EIIL              | ResNet-50    | 71.51 | -33.17    | +24        | -65.93     | -61.09     | -6.27     | 1e-4 | TODO       |
-| DebiAN            | ResNet-50    | 76.33 | -26.40    | +36        | -69.37     | -56.29     | -5.53     | 1e-4 | TODO       |
-| **LLE (ours)**        | ResNet-50    | 76.25 | -6.18     | **+10**    | **-61.00** | -54.89     | **-3.82** | 1e-3 | TODO       |
+| ERM               | ResNet-50    | 76.39 | -25.40    | +30        | -69.43     | -56.22     | -5.19     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/erm.pth) |
+| Mixup             | ResNet-50    | 76.17 | -24.87    | +34        | -68.18     | -55.79     | -5.60     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/mixup.pth) |
+| CutMix            | ResNet-50    | 75.90 | -25.78    | +32        | -69.31     | -56.36     | -5.65     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/cutmix.pth) |
+| Cutout            | ResNet-50    | 76.40 | -25.11    | +32        | -69.39     | -55.93     | -5.35     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/cutout.pth) |
+| AugMix            | ResNet-50    | 76.23 | -23.41    | +38        | -68.51     | -54.91     | -5.85     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/augmix.pth) |
+| SD                | ResNet-50    | 76.39 | -26.03    | +30        | -69.42     | -56.36     | -5.33     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/sd.pth) |
+| WTM Aug           | ResNet-50    | 76.32 | **-5.78** | +14        | -69.31     | -56.22     | -5.34     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/wtm_aug.pth) |
+| TXT Aug           | ResNet-50    | 75.94 | -25.93    | +36        | -63.99     | **-53.24** | -5.66     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/txt_aug.pth) |
+| BG Aug            | ResNet-50    | 76.03 | -25.01    | +36        | -68.41     | -54.51     | -4.67     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/bg_aug.pth) |
+| LfF               | ResNet-50    | 76.35 | -26.19    | +36        | -69.34     | -56.02     | -5.61     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lff.pth) |
+| JTT               | ResNet-50    | 76.33 | -26.40    | +32        | -69.48     | -56.30     | -5.55     | 1e-2 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/jtt.pth) |
+| EIIL              | ResNet-50    | 71.51 | -33.17    | +24        | -65.93     | -61.09     | -6.27     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/eiil.pth) |
+| DebiAN            | ResNet-50    | 76.33 | -26.40    | +36        | -69.37     | -56.29     | -5.53     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/debian.pth) |
+| **LLE (ours)**        | ResNet-50    | 76.25 | -6.18     | **+10**    | **-61.00** | -54.89     | **-3.82** | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_r50.pth) |
 |                   |              |       |           |            |            |            |           |      |            |
-| MAE + **LLE (ours)**  | ViT-B        | 83.68 | -2.48     | +6         | -58.78     | -44.96     | -3.70     | 1e-3 | TODO       |
-| MAE + **LLE (ours)**  | ViT-L        | 85.84 | -1.74     | +12        | -56.32     | -34.64     | -2.77     | 1e-3 | TODO       |
-| MAE + **LLE (ours)**  | ViT-H        | 86.84 | -1.11     | +28        | -55.69     | -30.95     | -2.35     | 1e-3 | TODO       |
-| SWAG + **LLE (ours)** | ViT-B        | 85.37 | -2.50     | +8         | -60.92     | -28.37     | -3.19     | 1e-4 | TODO       |
+| MAE + **LLE (ours)**  | ViT-B        | 83.68 | -2.48     | +6         | -58.78     | -44.96     | -3.70     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_vit-b_mae-ft.pth) |
+| MAE + **LLE (ours)**  | ViT-L        | 85.84 | -1.74     | +12        | -56.32     | -34.64     | -2.77     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_vit-l_mae-ft.pth) |
+| MAE + **LLE (ours)**  | ViT-H        | 86.84 | -1.11     | +28        | -55.69     | -30.95     | -2.35     | 1e-3 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_vit-h_mae-ft.pth) |
+| SWAG + **LLE (ours)** | ViT-B        | 85.37 | -2.50     | +8         | -60.92     | -28.37     | -3.19     | 1e-4 | [model](https://dl.fbaipublicfiles.com/whac_a_mole/llr/lle_vit-b_swag-ft.pth) |
 
 
 In our proposed Last Layer Ensemble (LLE) method, we also use edge detection for data augmentation, i.e., Edge Aug. The details of how to generate edge detection data on ImageNet and the checkpoints are in [Edge_Aug.md](create_datasets/imagenet/Edge_Aug.md).
