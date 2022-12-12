@@ -2,7 +2,7 @@
 
 [Zhiheng Li](https://zhiheng.li), [Ivan Evtimov](https://ivanevtimov.eu/), [Albert Gordo](https://agordo.github.io/), [Caner Hazirbas](https://hazirbas.com/), [Tal Hassner](https://talhassner.github.io/home/), [Cristian Canton Ferrer](https://cristiancanton.github.io/), [Chenliang Xu](https://www.cs.rochester.edu/~cxu22/), [Mark Ibrahim](https://markibrahim.me/)
 
-[[`preprint`]()]
+[[`ArXiv`](https://arxiv.org/abs/2212.04825)]
 
 <div align="center">
   <img src="assets/teaser.png" width="100%" height="100%"/>
@@ -154,9 +154,12 @@ If you use UrbanCars dataset or ImageNet-W dataset, or compare with our proposed
 @article{li_2022_whac_a_mole,
   title={A Whac-A-Mole Dilemma: Shortcuts Come in Multiples Where Mitigating One Amplifies Others},
   author={Zhiheng Li and Ivan Evtimov and Albert Gordo and Caner Hazirbas and Tal Hassner and Cristian Canton Ferrer and Chenliang Xu and Mark Ibrahim},
-  journal={arXiv},
+  publisher = {arXiv},
+  url = {https://arxiv.org/abs/2212.04825},
   year={2022}
 }
+
+
 ```
 
 ## License
