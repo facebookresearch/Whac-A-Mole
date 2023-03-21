@@ -1,8 +1,8 @@
-# A Whac-A-Mole Dilemma: Shortcuts Come in Multiples Where Mitigating One Amplifies Others
+# A Whac-A-Mole Dilemma: Shortcuts Come in Multiples Where Mitigating One Amplifies Others (CVPR 2023)
 
 [Zhiheng Li](https://zhiheng.li), [Ivan Evtimov](https://ivanevtimov.eu/), [Albert Gordo](https://agordo.github.io/), [Caner Hazirbas](https://hazirbas.com/), [Tal Hassner](https://talhassner.github.io/home/), [Cristian Canton Ferrer](https://cristiancanton.github.io/), [Chenliang Xu](https://www.cs.rochester.edu/~cxu22/), [Mark Ibrahim](https://markibrahim.me/)
 
-[[`ArXiv`](https://arxiv.org/abs/2212.04825)]
+[[`Preprint`](https://arxiv.org/abs/2212.04825)]
 
 <div align="center">
   <img src="assets/teaser.png" width="100%" height="100%"/>
@@ -151,15 +151,14 @@ PYTHONPATH=.:$PYTHONPATH python imagenet_trainers/launcher.py --method ${METHOD}
 If you use UrbanCars dataset or ImageNet-W dataset, or compare with our proposed Last Layer Ensemble (LLE) method, please cite our paper:
 
 ```BibTeX
-@article{li_2022_whac_a_mole,
+@article{li_2023_whac_a_mole,
   title={A Whac-A-Mole Dilemma: Shortcuts Come in Multiples Where Mitigating One Amplifies Others},
   author={Zhiheng Li and Ivan Evtimov and Albert Gordo and Caner Hazirbas and Tal Hassner and Cristian Canton Ferrer and Chenliang Xu and Mark Ibrahim},
-  publisher = {arXiv},
-  url = {https://arxiv.org/abs/2212.04825},
-  year={2022}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month={June},
+  year={2023},
+  url = {https://arxiv.org/abs/2212.04825}
 }
-
-
 ```
 
 ## License
