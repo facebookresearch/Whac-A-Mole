@@ -2,7 +2,7 @@
 
 [Zhiheng Li](https://zhiheng.li), [Ivan Evtimov](https://ivanevtimov.eu/), [Albert Gordo](https://agordo.github.io/), [Caner Hazirbas](https://hazirbas.com/), [Tal Hassner](https://talhassner.github.io/home/), [Cristian Canton Ferrer](https://cristiancanton.github.io/), [Chenliang Xu](https://www.cs.rochester.edu/~cxu22/), [Mark Ibrahim](https://markibrahim.me/)
 
-[[`Preprint`](https://arxiv.org/abs/2212.04825)]
+[[`paper`](https://arxiv.org/abs/2212.04825)]
 
 <div align="center">
   <img src="assets/teaser.png" width="100%" height="100%"/>
@@ -18,7 +18,7 @@ We discover the new watermark shortcut in ImageNet. and create ImageNet-W test s
 
 * Install ImageNet-W package:
 ```shell
-pip install git+https://github.com/facebookresearch/Whac-A-Mole.git
+pip install imagenet-w
 ```
 
 * Use `AddWatermark` transform for ImageNet:
@@ -151,13 +151,13 @@ PYTHONPATH=.:$PYTHONPATH python imagenet_trainers/launcher.py --method ${METHOD}
 If you use UrbanCars dataset or ImageNet-W dataset, or compare with our proposed Last Layer Ensemble (LLE) method, please cite our paper:
 
 ```BibTeX
-@article{li_2023_whac_a_mole,
-  title={A Whac-A-Mole Dilemma: Shortcuts Come in Multiples Where Mitigating One Amplifies Others},
-  author={Zhiheng Li and Ivan Evtimov and Albert Gordo and Caner Hazirbas and Tal Hassner and Cristian Canton Ferrer and Chenliang Xu and Mark Ibrahim},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month={June},
-  year={2023},
-  url = {https://arxiv.org/abs/2212.04825}
+@InProceedings{Li_2023_CVPR_Whac_A_Mole,
+    author    = {Li, Zhiheng and Evtimov, Ivan and Gordo, Albert and Hazirbas, Caner and Hassner, Tal and Ferrer, Cristian Canton and Xu, Chenliang and Ibrahim, Mark},
+    title     = {A Whac-a-Mole Dilemma: Shortcuts Come in Multiples Where Mitigating One Amplifies Others},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {20071-20082}
 }
 ```
 
