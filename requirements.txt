@@ -7,7 +7,7 @@ opencv_python==4.6.0.66
 pycocotools==2.0.2
 scikit-image==0.19.3
 scipy==1.7.3
-setuptools==65.5.0
+setuptools
 submitit==1.4.5
 timm==0.5.4
 torch>=1.13.0
